@@ -7,7 +7,7 @@ describe('filterByCategory', () => {
   test("'all' возвращает товары с ID [1, 2, 3, 4, 5, 6]", () => {
     expect(getIds(filterByCategory(products, 'all'))).toEqual([1, 2, 3, 4, 5, 6]);
   });
-  
+
   test("undefined возвращает товары с ID [1, 2, 3, 4, 5, 6]", () => {
     expect(getIds(filterByCategory(products, undefined))).toEqual([1, 2, 3, 4, 5, 6]);
   });
